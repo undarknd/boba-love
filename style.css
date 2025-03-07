@@ -57,11 +57,12 @@ h2 {
 }
 
 .pixel-letter {
-    background-image: url('letter-pixel.png'); /* Make sure this is uploaded */
+    background-image: url('letter-pixel.png'); /* Ensure this is uploaded */
 }
 
 .pixel-book {
-    background-image: url('book-pixel.png'); /* Make sure this is uploaded */
+    width: 46px;  /* Adjust width for the new animated gif */
+    height: 40px; /* Adjust height for the new animated gif */
 }
 
 /* Quiz Section */
@@ -88,4 +89,3 @@ button {
 button:hover {
     background-color: #ff69b4;
 }
-
