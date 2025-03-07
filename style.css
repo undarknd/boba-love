@@ -1,69 +1,78 @@
+/* Background */
 body {
-    background-color: #ffe6f2;
-    font-family: 'Comic Sans MS', cursive;
+    background-image: url('http://dl6.glitter-graphics.net/pub/3488/3488686sbj7faakxy.gif'); 
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-color: #ffd1dc; /* Soft pink in case image doesn't load */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #ff69b4; /* Cute pink text */
     text-align: center;
-    color: #ff66b2;
 }
 
-h1, h2 {
-    text-shadow: 2px 2px #ff99cc;
+/* Title */
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #ffb6c1; /* Soft pink shadow */
 }
 
+/* Subtitle */
+h2 {
+    font-size: 28px;
+    text-shadow: 1px 1px 4px #ffb6c1;
+}
+
+/* Letter Styling */
+.letter {
+    display: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px pink;
+    width: 60%;
+    margin: auto;
+}
+
+/* Pixel Letter & Book (Clickable) */
 .pixel-letter, .pixel-book {
-    width: 100px;
-    height: 100px;
-    display: inline-block;
+    width: 80px;
+    height: 80px;
     background-size: contain;
     background-repeat: no-repeat;
+    display: inline-block;
     cursor: pointer;
     margin: 20px;
 }
 
 .pixel-letter {
-    background-image: url('letter-pixel.png'); /* Replace with your cute pixel letter */
+    background-image: url('letter-pixel.png'); /* Make sure this is uploaded */
 }
 
 .pixel-book {
-    background-image: url('book-pixel.png'); /* Replace with your cute pixel book */
+    background-image: url('book-pixel.png'); /* Make sure this is uploaded */
 }
 
-.popup {
+/* Quiz Section */
+.quiz {
     display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
+    background-color: white;
     padding: 20px;
-    border: 2px solid #ff66b2;
-    box-shadow: 5px 5px #ff99cc;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px pink;
     width: 60%;
+    margin: auto;
 }
 
-.popup-content {
-    text-align: left;
-}
-
-.close {
-    float: right;
-    cursor: pointer;
-    font-size: 24px;
-}
-
- {
-    display: none;
-}
-
+/* Buttons */
 button {
-    background: #ff99cc;
+    background-color: #ffb6c1;
     border: none;
-    padding: 10px;
-    margin: 5px;
-    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 10px;
     cursor: pointer;
-    border-radius: 5px;
+    font-size: 16px;
 }
 
 button:hover {
-    background: #ff66b2;
+    background-color: #ff69b4;
 }
