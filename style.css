@@ -9,6 +9,18 @@ body {
     text-align: center;
 }
 
+/* Banner at the top */
+.banner {
+    background-image: url('http://dl2.glitter-graphics.net/pub/417/417272mey8pz5lfi.gif'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 435px;
+    height: 75px;
+    margin: auto;
+    margin-top: 10px; /* Adds spacing from the top */
+}
+
 /* Title */
 h1 {
     font-size: 40px;
@@ -76,3 +88,4 @@ button {
 button:hover {
     background-color: #ff69b4;
 }
+
