@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dearest Boba Tea! 🧋💕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>My dearest boba tea! 🧋💕</h1>
+        <h2>YOUUU ARE MY UNIIVERSEEEE 💗</h2>
+        <p>Just wanted to tell you how much I lOOOve YOUU! 🩷</p>
+
+        <!-- Clickable Pixel Letter -->
+        <div class="pixel-letter" onclick="showLetter()"></div>
+        
+        <div id="letterPopup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="hideLetter()">&times;</span>
+                <p>Dear bobo,</p>
+                <p>I just wanted to say that I love you and appreciate everything you do 🩷 You work so hard...</p>
+            </div>
+        </div>
+
+        <!-- Clickable Pixel Book -->
+        <div class="pixel-book" onclick="showQuiz()"></div>
+
+        <div id="quizSection" class="hidden">
+            <h3>Now enjoy some quizzes with me :3</h3>
+
+            <div class="quiz">
+                <p>1) What song do we both lOoooVEEee?</p>
+                <button onclick="checkAnswer(this, 'A')">A) Ma meilleure ennemie - Stromae ft Pomme</button>
+                <button onclick="checkAnswer(this, 'B')">B) All about that bass - Meghan Trainor</button>
+                <button onclick="checkAnswer(this, 'C')">C) One call away - Charlie Puth</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="quiz">
+                <p>2) What show do we looove to watch together?</p>
+                <button onclick="checkAnswer(this, 'D')">A) House</button>
+                <button onclick="checkAnswer(this, 'D')">B) Arcane</button>
+                <button onclick="checkAnswer(this, 'D')">C) Final Space</button>
+                <button onclick="checkAnswer(this, 'D')">D) All</button>
+                <p class="feedback"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

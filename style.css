@@ -1,0 +1,69 @@
+body {
+    background-color: #ffe6f2;
+    font-family: 'Comic Sans MS', cursive;
+    text-align: center;
+    color: #ff66b2;
+}
+
+h1, h2 {
+    text-shadow: 2px 2px #ff99cc;
+}
+
+.pixel-letter, .pixel-book {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.pixel-letter {
+    background-image: url('letter-pixel.png'); /* Replace with your cute pixel letter */
+}
+
+.pixel-book {
+    background-image: url('book-pixel.png'); /* Replace with your cute pixel book */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 2px solid #ff66b2;
+    box-shadow: 5px 5px #ff99cc;
+    width: 60%;
+}
+
+.popup-content {
+    text-align: left;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background: #ff99cc;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #ff66b2;
+}
