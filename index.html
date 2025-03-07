@@ -16,8 +16,12 @@
     <h2>YOUUU ARE MY UNIIVERSEEEE 💗</h2>
     <p>Just wanted to tell you how much I lOOOve YOUU! 💖</p>
 
-    <!-- Clickable Letter to Open Love Note -->
-    <div class="pixel-letter" onclick="showLetter()"></div>
+    <!-- Clickable Love Book to Open Love Note -->
+    <div class="pixel-book" onclick="showLetter()">
+        <a href="https://www.glitter-graphics.com">
+            <img src="http://dl9.glitter-graphics.net/pub/536/536379ct59sbi3yr.gif" width="46" height="40" alt="Love Book">
+        </a>
+    </div>
 
     <!-- Love Letter (Initially Hidden) -->
     <div id="letter" class="letter">
@@ -35,29 +39,6 @@
         <button onclick="hideLetter()">Close</button>
     </div>
 
-    <!-- Clickable Book to Open Quiz -->
-    <div class="pixel-book" onclick="showQuiz()"></div>
-
-    <!-- Quiz Section (Initially Hidden) -->
-    <div id="quiz" class="quiz">
-        <p>Now enjoy some quizzes with me :3</p>
-
-        <h3>1) What song do we both lOoooVEEee?</h3>
-        <button onclick="checkAnswer(1, 'A')">A) Ma meilleure ennemie - Stromae ft Pomme</button>
-        <button onclick="checkAnswer(1, 'B')">B) All about that bass - Meghan Trainor</button>
-        <button onclick="checkAnswer(1, 'C')">C) One call away - Charlie Puth</button>
-        <p id="result1"></p>
-
-        <h3>2) What show do we looove to watch together?</h3>
-        <button onclick="checkAnswer(2, 'A')">A) House</button>
-        <button onclick="checkAnswer(2, 'B')">B) Arcane</button>
-        <button onclick="checkAnswer(2, 'C')">C) Final Space</button>
-        <button onclick="checkAnswer(2, 'D')">D) All</button>
-        <p id="result2"></p>
-
-        <button onclick="hideQuiz()">Close</button>
-    </div>
-
     <script>
         function showLetter() {
             document.getElementById("letter").style.display = "block";
@@ -65,30 +46,6 @@
 
         function hideLetter() {
             document.getElementById("letter").style.display = "none";
-        }
-
-        function showQuiz() {
-            document.getElementById("quiz").style.display = "block";
-        }
-
-        function hideQuiz() {
-            document.getElementById("quiz").style.display = "none";
-        }
-
-        function checkAnswer(question, answer) {
-            if (question === 1) {
-                if (answer === 'A') {
-                    document.getElementById("result1").innerText = "Hehe dat was an easy one! well done 💗";
-                } else {
-                    document.getElementById("result1").innerText = "Wrong! Maybe next one! <33";
-                }
-            } else if (question === 2) {
-                if (answer === 'D') {
-                    document.getElementById("result2").innerText = "Hehe! Well done boba!💗";
-                } else {
-                    document.getElementById("result2").innerText = "Wrong hehe! All of them :)";
-                }
-            }
         }
     </script>
 
