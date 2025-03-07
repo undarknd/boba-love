@@ -8,47 +8,89 @@
 </head>
 <body>
 
-    <div class="container">
-        <h1>My dearest boba tea! 🧋💕</h1>
-        <h2>YOUUU ARE MY UNIIVERSEEEE 💗</h2>
-        <p>Just wanted to tell you how much I lOOOve YOUU! 🩷</p>
+    <!-- Cute Glitter Banner at the Top -->
+    <div class="banner"></div>
 
-        <!-- Clickable Pixel Letter -->
-        <div class="pixel-letter" onclick="showLetter()"></div>
-        
-        <div id="letterPopup" class="popup">
-            <div class="popup-content">
-                <span class="close" onclick="hideLetter()">&times;</span>
-                <p>Dear bobo,</p>
-                <p>I just wanted to say that I love you and appreciate everything you do 🩷 You work so hard...</p>
-            </div>
-        </div>
+    <!-- Main Title -->
+    <h1>My dearest boba tea! 🧋💕</h1>
+    <h2>YOUUU ARE MY UNIIVERSEEEE 💗</h2>
+    <p>Just wanted to tell you how much I lOOOve YOUU! 💖</p>
 
-        <!-- Clickable Pixel Book -->
-        <div class="pixel-book" onclick="showQuiz()"></div>
+    <!-- Clickable Letter to Open Love Note -->
+    <div class="pixel-letter" onclick="showLetter()"></div>
 
-        <div id="quizSection" class="hidden">
-            <h3>Now enjoy some quizzes with me :3</h3>
-
-            <div class="quiz">
-                <p>1) What song do we both lOoooVEEee?</p>
-                <button onclick="checkAnswer(this, 'A')">A) Ma meilleure ennemie - Stromae ft Pomme</button>
-                <button onclick="checkAnswer(this, 'B')">B) All about that bass - Meghan Trainor</button>
-                <button onclick="checkAnswer(this, 'C')">C) One call away - Charlie Puth</button>
-                <p class="feedback"></p>
-            </div>
-
-            <div class="quiz">
-                <p>2) What show do we looove to watch together?</p>
-                <button onclick="checkAnswer(this, 'D')">A) House</button>
-                <button onclick="checkAnswer(this, 'D')">B) Arcane</button>
-                <button onclick="checkAnswer(this, 'D')">C) Final Space</button>
-                <button onclick="checkAnswer(this, 'D')">D) All</button>
-                <p class="feedback"></p>
-            </div>
-        </div>
+    <!-- Love Letter (Initially Hidden) -->
+    <div id="letter" class="letter">
+        <p>
+            Dear bobo,  
+            <br><br>
+            I just wanted to say that I love you and appreciate everything you do 🩷 You work so hard for me always and give me the best. 
+            You’re the prettiest and bestest bobo ever and I’m so lucky and grateful to have such a loving husband by my side💗  
+            You mean every thing to me. You mean the whole world and more. You are my moon and sun and solar system and every thing combined.  
+            My life is better when I’m with you and I enjoy every day of my life when I’m with you. You make me so happy,  
+            and I would be one sad boba tea 🧋 without you.  
+            <br><br>
+            **I LOVE YOU SOOOOOOO MUUUUCHH!!** 💖
+        </p>
+        <button onclick="hideLetter()">Close</button>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Clickable Book to Open Quiz -->
+    <div class="pixel-book" onclick="showQuiz()"></div>
+
+    <!-- Quiz Section (Initially Hidden) -->
+    <div id="quiz" class="quiz">
+        <p>Now enjoy some quizzes with me :3</p>
+
+        <h3>1) What song do we both lOoooVEEee?</h3>
+        <button onclick="checkAnswer(1, 'A')">A) Ma meilleure ennemie - Stromae ft Pomme</button>
+        <button onclick="checkAnswer(1, 'B')">B) All about that bass - Meghan Trainor</button>
+        <button onclick="checkAnswer(1, 'C')">C) One call away - Charlie Puth</button>
+        <p id="result1"></p>
+
+        <h3>2) What show do we looove to watch together?</h3>
+        <button onclick="checkAnswer(2, 'A')">A) House</button>
+        <button onclick="checkAnswer(2, 'B')">B) Arcane</button>
+        <button onclick="checkAnswer(2, 'C')">C) Final Space</button>
+        <button onclick="checkAnswer(2, 'D')">D) All</button>
+        <p id="result2"></p>
+
+        <button onclick="hideQuiz()">Close</button>
+    </div>
+
+    <script>
+        function showLetter() {
+            document.getElementById("letter").style.display = "block";
+        }
+
+        function hideLetter() {
+            document.getElementById("letter").style.display = "none";
+        }
+
+        function showQuiz() {
+            document.getElementById("quiz").style.display = "block";
+        }
+
+        function hideQuiz() {
+            document.getElementById("quiz").style.display = "none";
+        }
+
+        function checkAnswer(question, answer) {
+            if (question === 1) {
+                if (answer === 'A') {
+                    document.getElementById("result1").innerText = "Hehe dat was an easy one! well done 💗";
+                } else {
+                    document.getElementById("result1").innerText = "Wrong! Maybe next one! <33";
+                }
+            } else if (question === 2) {
+                if (answer === 'D') {
+                    document.getElementById("result2").innerText = "Hehe! Well done boba!💗";
+                } else {
+                    document.getElementById("result2").innerText = "Wrong hehe! All of them :)";
+                }
+            }
+        }
+    </script>
+
 </body>
 </html>
