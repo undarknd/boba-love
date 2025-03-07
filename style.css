@@ -56,21 +56,19 @@ h1 {
 
 /* Pixel Letter & Question Mark (Clickable) */
 .pixel-letter, .pixel-question-mark {
-    width: 80px;
-    height: 80px;
-    background-size: contain;
-    background-repeat: no-repeat;
     display: inline-block;
     cursor: pointer;
     margin: 20px;
 }
 
-.pixel-letter {
-    background-image: url('letter-pixel.png'); /* Make sure this is uploaded */
+.pixel-letter img {
+    width: 46px;
+    height: 40px;
 }
 
 .pixel-question-mark img {
-    cursor: pointer;
+    width: 29px;
+    height: 45px;
 }
 
 /* Quiz Section */
@@ -166,3 +164,4 @@ button:hover {
     background-color: #ff69b4;
     animation: confetti 1s linear infinite;
 }
+
